@@ -60,11 +60,11 @@ killcam.events =
 }
 
 killcam.on_init = function()
-  global.killcam = data
+  storage.killcam = data
 end
 
 killcam.on_load = function()
-  data = global.killcam or data
+  data = storage.killcam or data
 end
 
 return killcam
